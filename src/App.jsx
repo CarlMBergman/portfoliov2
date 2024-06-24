@@ -102,13 +102,14 @@ function App() {
     },
   ];
 
-  const listOfProjects = projects.map((project) => {
+  const listOfProjects = projects.map((project, index) => {
     return (
       <Project
         name={project.name}
         info={project.info}
         imgPath={project.imgpath}
         link={project.link}
+        key={index}
       />
     );
   });
