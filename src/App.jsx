@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import jag from "./assets/jag.jpeg";
 import "./App.scss";
 import { Project } from "./components/projects";
+import ewallet from "./assets/ewallet.png";
 
 const Sparkle = ({ top, left }) => (
   <div
@@ -74,7 +75,7 @@ function App() {
     {
       name: "E-Wallet",
       info: "Mindre projekt i studierna som gick ut på att ta emot och visa kort information",
-      imgpath: "src/assets/ewallet.png",
+      imgpath: { ewallet },
       link: "https://cheery-cucurucho-16a4c8.netlify.app",
     },
     {
