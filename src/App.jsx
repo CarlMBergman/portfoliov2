@@ -3,6 +3,10 @@ import jag from "./assets/jag.jpeg";
 import "./App.scss";
 import { Project } from "./components/projects";
 import ewallet from "./assets/ewallet.png";
+import jump from "./assets/jumpandisplay.svg";
+import kok from "./assets/kok.png";
+import overwatch1 from "./assets/overwatch1.png";
+import owndownload from "./assets/Overwatch.pdf";
 
 const Sparkle = ({ top, left }) => (
   <div
@@ -81,20 +85,20 @@ function App() {
     {
       name: "Kokbok",
       info: "Min egna lilla kokbok där jag sparar recept.",
-      imgpath: "src/assets/kok.png",
+      imgpath: kok,
       link: "https://bucolic-tartufo-956e58.netlify.app/",
     },
     {
       name: "Jumpman",
       info: "Kul litet spel, självklart egendesignat. Försök slå highscore!",
-      imgpath: "src/assets/jumpandisplay.svg",
+      imgpath: jump,
       link: "https://incomparable-sunburst-dea9c1.netlify.app",
     },
     {
       name: "Overwatch",
       info: "Fick i uppdrag att lyfta frontenden av ett larmsystem under min LIA, klicka på länken för att läsa mer om arbetet",
-      imgpath: "src/assets/overwatch1.png",
-      link: "src/assets/Overwatch.pdf",
+      imgpath: overwatch1,
+      link: owndownload,
     },
   ];
 
