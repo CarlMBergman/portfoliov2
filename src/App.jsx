@@ -120,7 +120,7 @@ function App() {
         <h1 className="intro">
           Hej! <br />
           Carl Bergman här, <br />
-          <SparkleWord>Webb utvecklare</SparkleWord>
+          <SparkleWord>Frontend utvecklare</SparkleWord>
         </h1>
         <img className="me" src={jag} alt="hej" />
       </header>
