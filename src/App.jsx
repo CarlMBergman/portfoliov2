@@ -75,7 +75,7 @@ function App() {
     {
       name: "E-Wallet",
       info: "Mindre projekt i studierna som gick ut på att ta emot och visa kort information",
-      imgpath: { ewallet },
+      imgpath: ewallet,
       link: "https://cheery-cucurucho-16a4c8.netlify.app",
     },
     {
