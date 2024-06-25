@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import jag from "./assets/jag.jpeg";
 import "./App.scss";
 import { Project } from "./components/projects";
-import ewallet from "./assets/ewallet.png";
+import ewallet from "./assets/ewallet1.png";
 import jump from "./assets/jumpandisplay.svg";
 import kok from "./assets/kok.png";
 import overwatch1 from "./assets/overwatch1.png";
