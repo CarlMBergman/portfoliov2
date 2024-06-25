@@ -6,19 +6,24 @@
 
 .head {
   height: 100vh;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  justify-items: end;
   align-items: center;
 }
 
 .intro {
   font-family: "Montserrat";
   font-weight: 500;
-  font-size: 46px;
+  font-size: 54px;
+  cursor: default;
 }
 
 .me {
   width: 300px;
+  justify-self: baseline;
+  // margin-right: 15rem;
 }
 
 @keyframes sparkle {

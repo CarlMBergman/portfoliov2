@@ -57,23 +57,6 @@ const SparkleWord = ({ children }) => {
   );
 };
 
-function handleDownload() {
-  const pdfUrl = "src/assets/Overwatch.pdf"; // Replace with the actual path to your PDF file
-
-  fetch(pdfUrl)
-    .then((response) => response.blob())
-    .then((blob) => {
-      const url = window.URL.createObjectURL(new Blob([blob]));
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "Overwatch.pdf"); // Set desired file name here
-      document.body.appendChild(link);
-      link.click();
-      link.parentNode.removeChild(link);
-    })
-    .catch((error) => console.error("Error downloading PDF:", error));
-}
-
 function App() {
   const projects = [
     {
