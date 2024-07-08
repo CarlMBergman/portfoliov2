@@ -65,6 +65,12 @@
   margin-bottom: 3rem;
 }
 
+@media (max-width: 1200px) {
+ .main {
+  grid-template-column: 1fr;
+ }
+}
+
 .portfolio__header {
   grid-column: 1 / 3;
   text-align: center;
