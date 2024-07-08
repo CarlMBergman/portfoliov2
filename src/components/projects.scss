@@ -28,6 +28,12 @@
   justify-self: end;
 }
 
+@media (max-width: 1200px) {
+  .project:nth-child(even) {
+  justify-self: center;
+ }
+}
+
 a {
   text-decoration: none;
   color: black;
