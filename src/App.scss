@@ -65,6 +65,12 @@
   margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 1400px) {
+ .main {
+  grid-template-column: 1fr;
+ }
+}
+
 .portfolio__header {
   font-size: 36px;
   font-weight: 500;
