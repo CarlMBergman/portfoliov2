@@ -65,10 +65,30 @@
   margin-bottom: 3rem;
 }
 
-@media only screen and (max-width: 1400px) {
- .main {
-  grid-template-column: 1fr;
- }
+.selection {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .selection {
+    grid-column: 1 / 2;
+  }
+
+  .me {
+    display: none;
+  }
+  .intro {
+    grid-column: 1 / 3;
+    padding: 0.5rem;
+    font-size: 46px;
+  }
 }
 
 .portfolio__header {

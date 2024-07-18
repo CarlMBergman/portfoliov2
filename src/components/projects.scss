@@ -24,14 +24,17 @@
   }
 }
 
-.project:nth-child(odd) {
+.project:nth-child(even) {
   justify-self: end;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
+  .project:nth-child(odd) {
+    justify-self: center;
+  }
   .project:nth-child(even) {
-  justify-self: center;
- }
+    justify-self: center;
+  }
 }
 
 a {

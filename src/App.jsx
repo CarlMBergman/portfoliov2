@@ -109,18 +109,25 @@ function App() {
         <img className="me" src={jag} alt="hej" />
       </header>
       <main className="main">
-        <h2
-          onClick={() => setActive(true)}
-          className={`portfolio__header ${active === true ? "underline" : ""}`}
-        >
-          Några av mina projekt
-        </h2>
-        <h2
-          onClick={() => setActive(false)}
-          className={`portfolio__header ${active === false ? "underline" : ""}`}
-        >
-          Referenser
-        </h2>
+        <div className="selection">
+          <h2
+            onClick={() => setActive(true)}
+            className={`portfolio__header ${
+              active === true ? "underline" : ""
+            }`}
+          >
+            Projekt
+          </h2>
+          <h2
+            onClick={() => setActive(false)}
+            className={`portfolio__header ${
+              active === false ? "underline" : ""
+            }`}
+          >
+            Referenser
+          </h2>
+        </div>
+
         {listOfProjects}
       </main>
     </>
