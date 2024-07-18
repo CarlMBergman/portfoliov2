@@ -28,7 +28,7 @@ const SparkleWord = ({ children }) => {
     for (let i = 0; i < 20; i++) {
       // Increase the number of sparkles
       const angle = Math.random() * 2 * Math.PI; // Random angle
-      const radius = Math.random() * 50; // Random radius
+      const radius = Math.random() * 500; // Random radius
       const x = rect.width / 2 + radius * Math.cos(angle); // Calculate x position
       const y = rect.height / 2 + radius * Math.sin(angle); // Calculate y position
       newSparkles.push({
@@ -58,6 +58,7 @@ const SparkleWord = ({ children }) => {
 };
 
 function App() {
+  const [active, setActive] = useState(true);
   const projects = [
     {
       name: "E-Wallet",
@@ -108,7 +109,18 @@ function App() {
         <img className="me" src={jag} alt="hej" />
       </header>
       <main className="main">
-        <h2 className="portfolio__header">Några av mina projekt</h2>
+        <h2
+          onClick={() => setActive(true)}
+          className={`portfolio__header ${active === true ? "underline" : ""}`}
+        >
+          Några av mina projekt
+        </h2>
+        <h2
+          onClick={() => setActive(false)}
+          className={`portfolio__header ${active === false ? "underline" : ""}`}
+        >
+          Referenser
+        </h2>
         {listOfProjects}
       </main>
     </>
